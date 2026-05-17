@@ -4,15 +4,15 @@ This is the repository that contains source code for [Pitfalls of KV Cache Compr
 
 If you find this paper useful for your work please cite:
 ```
-@misc{chen2025pitfallskvcachecompression,
-      title={The Pitfalls of KV Cache Compression},
+@misc{chen2026pitfallskvcachecompression,
+      title={The Pitfalls of KV Cache Compression}, 
       author={Alex Chen and Renato Geh and Aditya Grover and Guy Van den Broeck and Daniel Israel},
-      year={2025},
+      year={2026},
       eprint={2510.00231},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2510.00231},
-      }
+      url={https://arxiv.org/abs/2510.00231}, 
+}
 ```
 
 # Website License
