@@ -98,23 +98,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              KV cache compression promises increased throughput and efficiency with negligible loss in performance.
-              While the gains
-              in throughput are indisputable and
-              recent literature has indeed shown minimal degradation on particular benchmarks,
-              in general the consequences of compression in realistic scenarios such as multiinstruction prompting have
-              been
-              insufficiently studied. In this paper, we identify
-              several pitfalls practitioners should be aware of when deploying KV cache compressed LLMs. Importantly, we
-              show that
-              certain instructions degrade much more
-              rapidly with compression, effectively causing them to be completely ignored by
-              the LLM. As a practical example of that, we highlight system prompt leakage as a
-              case study, empirically showing the impact of compression on leakage and general
-              instruction following. We show several factors that play a role in prompt leakage:
-              compression method, instruction order, and KV eviction bias. We then propose
-              simple changes to KV cache eviction policies that can reduce the impact of these
-              factors and improve the overall performance in multi-instruction tasks.
+              KV cache compression promises increased throughput and efficiency with negligible loss in performance. While the gains in throughput are indisputable and recent literature has indeed shown minimal degradation on particular benchmarks, in general the consequences of compression in realistic scenarios such as multi-instruction prompting have been insufficiently studied. In this paper, we identify several pitfalls that practitioners should be aware of when deploying KV cache compressed LLMs. We evaluate five KV cache compression methods (StreamingLLM, SnapKV, TOVA, H2O, and K-Norm) on Llama3.1 8B and Qwen2.5 14B under multi-instruction prompting with IFEval. Importantly, we show that certain instructions degrade much more rapidly with compression, effectively causing them to be completely ignored by the LLM. As a practical example, we highlight system prompt leakage as a case study, empirically demonstrating the impact of compression on leakage and general instruction-following. We identify several factors that contribute to system prompt leakage: compression method, instruction order, and KV eviction bias. We then propose simple changes to KV cache eviction policies that can reduce the impact of these factors and improve the overall performance in multi-instruction tasks.
             </p>
           </div>
         </div>
